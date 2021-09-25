@@ -1,20 +1,18 @@
 .site-header {
 
     .wrapper {
-        max-width: 60em;
-        margin: 0 auto;
-        padding: 1rem 0 ;
+        padding-top: 1rem;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .site-branding {
         text-decoration: none;
         flex-basis: 50%;
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
 
@@ -78,6 +76,37 @@
                 font-size: 70%;
             }
         }
+    }
+
+    .navigation {
+        flex-basis: 100%;
+        background-color: #2e4c66;
+        border-radius: 0.5rem;
+        position: relative;
+        top: 1.4rem;
+        z-index: 10;
+
+        ul {
+            display: flex;
+            margin: 0;
+        }
+
+        li {
+            list-style: none outside;
+            margin-right: 1.2rem;
+
+            &:hover a{
+                color: #15BFA5;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 1.2rem;
+        }
+
     }
 }
     
