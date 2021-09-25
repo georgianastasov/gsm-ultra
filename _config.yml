@@ -3,7 +3,7 @@ email: gsm.ultra@gmail.com
 description: hi
 destination: docs
 
-baseurl: "" 
+baseurl: /gsm-ultra 
 url: ""
 twitter_username: jekyllrb
 github_username:  jekyll
