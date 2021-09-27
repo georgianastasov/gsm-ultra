@@ -300,6 +300,125 @@ body .wrapper {
   transition: color 0.3s ease-out, background 0.3s ease-out;
 }
 
+.site-footer {
+  background-color: #161616;
+  color: white;
+  padding: 2rem 2rem 0 2rem;
+}
+.site-footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.site-footer .intro {
+  margin-left: 1rem;
+}
+.site-footer .intro .branding {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+.site-footer .intro .branding .logo {
+  flex-basis: 20%;
+}
+.site-footer .intro .branding .logo img {
+  width: 100%;
+}
+.site-footer .intro .branding .nxt {
+  flex-basis: 70%;
+}
+.site-footer .intro .branding .nxt .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #426b8f;
+}
+.site-footer .intro .branding .nxt .subtitle {
+  text-transform: uppercase;
+  font-size: 70%;
+  letter-spacing: 0.1rem;
+}
+.site-footer .intro .desc {
+  font-size: 80%;
+  color: #d4d4d4;
+  margin-bottom: 1rem;
+}
+.site-footer .intro a:not(:first-child) {
+  display: inline-block;
+  color: white;
+  background-color: #333333;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid gray;
+  margin-right: 0.4rem;
+  transition: background 0.3s ease-out;
+}
+.site-footer .intro a:not(:first-child):hover {
+  background-color: #15BFA5;
+  border-color: #15BFA5;
+}
+.site-footer .posts {
+  margin-top: 1rem;
+}
+.site-footer .posts .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.site-footer .posts .postone {
+  border-bottom: 1px solid gray;
+  margin-bottom: 0.5rem;
+}
+.site-footer .posts .text {
+  color: #d4d4d4;
+  font-size: 80%;
+  margin-bottom: 1rem;
+}
+.site-footer .posts .date {
+  font-size: 80%;
+  margin-bottom: 0.5rem;
+}
+.site-footer .links {
+  margin-top: 1rem;
+}
+.site-footer .links .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.site-footer .links .social {
+  color: #d4d4d4;
+  font-size: 80%;
+  margin-bottom: 0.2rem;
+}
+.site-footer .links .social-link {
+  font-size: 80%;
+  margin-bottom: 1rem;
+}
+.site-footer .bottom {
+  border-top: 1px solid white;
+  padding: 1rem 0 0 0;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+}
+.site-footer .bottom ul {
+  display: flex;
+}
+.site-footer .bottom li {
+  list-style: none outside;
+  margin-right: 1rem;
+}
+.site-footer .bottom a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-out;
+}
+.site-footer .bottom a:hover {
+  color: #15BFA5;
+}
+
 .banner {
   padding: 2em;
   background-image: url(https://georgetelegraphblog.files.wordpress.com/2019/01/mobile-repairing-course.jpg);

@@ -1,0 +1,143 @@
+.site-footer {
+    background-color: #161616;
+    color: white;
+    padding: 2rem 2rem 0 2rem;
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .intro {
+        margin-left: 1rem;
+
+        .branding {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 0.8rem;
+            
+            .logo {
+                flex-basis: 20%;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .nxt {
+                flex-basis: 70%;
+    
+                .title {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #426b8f;
+                }
+    
+                .subtitle {
+                    text-transform: uppercase;
+                    font-size: 70%;
+                    letter-spacing: 0.1rem;
+                }
+            }   
+        }
+
+        .desc {
+            font-size: 80%;
+            color: rgb(212, 212, 212);
+            margin-bottom: 1rem;
+        }
+
+        a:not(:first-child) {
+            display: inline-block;
+            color: white;
+            background-color: rgb(51, 51, 51);
+            padding: 0.4rem 0.6rem;
+            border: 1px solid gray;
+            margin-right: 0.4rem;
+            transition: background 0.3s ease-out;
+
+            &:hover {
+                background-color: #15BFA5;
+                border-color: #15BFA5;
+            }
+        }
+    }
+
+    .posts {
+        margin-top: 1rem;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .postone {
+            border-bottom: 1px solid gray;
+            margin-bottom: 0.5rem;
+        }
+
+        .text {
+            color: rgb(212, 212, 212);
+            font-size: 80%;
+            margin-bottom: 1rem;
+        }
+
+        .date {
+            font-size: 80%;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .links {
+        margin-top: 1rem;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .social {
+            color: rgb(212, 212, 212);
+            font-size: 80%;
+            margin-bottom: 0.2rem;
+        }
+
+        .social-link {
+            font-size: 80%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid white;
+        padding: 1rem 0 0 0;
+        grid-column: span 3;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none outside;
+            margin-right: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease-out;
+
+            &:hover {
+                color: #15BFA5;
+            }
+        }
+    }
+}
