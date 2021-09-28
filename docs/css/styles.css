@@ -1004,3 +1004,199 @@ body .wrapper {
     margin-bottom: 4rem;
   }
 }
+
+.about-banner {
+  background-image: url(https://video-images.vice.com/videos/5a/01/5a01b91b177dd416f530a081/5a01b91b177dd416f530a081-1518708133630.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 7rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-banner::before {
+  display: block;
+  content: "";
+  background: rgba(40, 40, 40, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.about-banner .wrapper {
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+.about-banner .wrapper i {
+  font-size: 80%;
+}
+.about-banner .wrapper .title {
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.about-repairs {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.06'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.about-repairs .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media screen and (min-width: 810px) {
+  .about-repairs .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.about-repairs .wrapper .left {
+  position: relative;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 810px) {
+  .about-repairs .wrapper .left {
+    margin-bottom: 0;
+  }
+}
+.about-repairs .wrapper .left .front {
+  position: relative;
+}
+.about-repairs .wrapper .left .front:before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+.about-repairs .wrapper .left .front:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 4rem;
+  bottom: -0.5rem;
+  background-color: #2e4c66;
+}
+.about-repairs .wrapper .left .front .media {
+  display: block;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.about-repairs .wrapper .left .front img {
+  display: block;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+}
+.about-repairs .wrapper .right .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 140%;
+  margin-bottom: 0.4rem;
+}
+.about-repairs .wrapper .right span {
+  display: inline-block;
+  width: 3rem;
+  height: 0.2rem;
+  border-radius: 0.6rem;
+  background-color: #15BFA5;
+  margin-bottom: 1rem;
+}
+.about-repairs .wrapper .right .desc {
+  font-size: 80%;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+.about-repairs .wrapper .right a {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  font-size: 80%;
+  padding: 0.6rem 1.4rem;
+  background-color: #15BFA5;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease-out;
+}
+.about-repairs .wrapper .right a:hover {
+  background-color: #2e4c66;
+}
+
+.about-tokens {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.06'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.about-tokens .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media screen and (min-width: 630px) {
+  .about-tokens .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.about-tokens .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-tokens .box .title {
+  flex-basis: 100%;
+  font-weight: bold;
+  font-size: 110%;
+}
+@media screen and (min-width: 970px) {
+  .about-tokens .box .title {
+    flex-basis: 30%;
+  }
+}
+.about-tokens .box .line {
+  flex: 0 1 100%;
+  width: 1rem;
+  height: 0.1rem;
+  background-color: #15BFA5;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 970px) {
+  .about-tokens .box .line {
+    flex: 0 1 60%;
+  }
+}
+.about-tokens .box .number {
+  flex-basis: 100%;
+  font-size: 400%;
+  color: #cacaca;
+  font-weight: bold;
+}
+@media screen and (min-width: 970px) {
+  .about-tokens .box .number {
+    flex-basis: 30%;
+  }
+}
+.about-tokens .box .desc {
+  flex-basis: 100%;
+  font-size: 80%;
+  color: #6b6b6b;
+}
+@media screen and (min-width: 970px) {
+  .about-tokens .box .desc {
+    flex-basis: 60%;
+  }
+}

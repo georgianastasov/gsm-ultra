@@ -1,0 +1,39 @@
+.about-banner {
+    background-image: url(https://video-images.vice.com/videos/5a/01/5a01b91b177dd416f530a081/5a01b91b177dd416f530a081-1518708133630.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 7rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        display: block;
+        content: '';
+        background: rgba(40, 40, 40, 0.85);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .wrapper {
+        z-index: 10;
+        color: white;
+        text-align: center;
+
+        i {
+            font-size: 80%;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 140%;
+        }
+    }
+}
