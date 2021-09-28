@@ -1,5 +1,5 @@
 .achievements {
-    height: 80vh;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +9,17 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr;
         gap: 2rem;
         color: white;
+
+        @include mqq(630px, min){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mqq(830px, min){
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     .box {

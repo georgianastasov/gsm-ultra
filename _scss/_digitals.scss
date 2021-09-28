@@ -1,5 +1,5 @@
 .digitals {
-    height: 100vh;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,15 +9,23 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         justify-items: center;
         align-items: center;
         gap: 3rem;
+
+        @include mqq(630px, min){
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     .intro {
         padding-bottom: 2rem;
-        grid-column: span 3;
+
+        @include mqq(630px, min){
+            grid-column: span 3;
+        }
 
         .title {
             text-transform: uppercase;

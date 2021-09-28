@@ -13,7 +13,7 @@
 
     .site-branding {
         text-decoration: none;
-        flex-basis: 50%;
+        flex-basis: 40%;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -46,7 +46,9 @@
     }
 
     .site-links {
+        padding-top: 1rem;
         flex-basis: 50%;
+        padding-bottom: 1rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0 1rem;
@@ -81,17 +83,39 @@
         }
     }
 
+    #nav-toggle {
+        flex-basis: 10%;
+        padding-left: 2rem;
+
+        @include mqq(700px, min){
+            display: none;
+        }
+    }
+
     .navigation {
+        display: none;
         flex-basis: 100%;
         background-color: #2e4c66;
         border-radius: 0.5rem;
         position: relative;
-        top: 1.4rem;
         z-index: 10;
+        margin: 0.5rem 0 0.8rem 0;
+
+        @include mqq(700px, min){
+            display: block;
+            top: 1.6rem;
+            margin-bottom: 0;
+        }
+        
 
         ul {
-            display: flex;
+            display: block;
             margin: 0;
+            text-align: center;
+
+            @include mqq(700px, min){
+                display: flex;
+            }
         }
 
         li {
@@ -102,19 +126,37 @@
                 background-color: rgb(60, 96, 151);
             }
 
+            
+
             &:first-child:hover a {
+
                 border-top-left-radius: 0.5rem;
-                border-bottom-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+
+                @include mqq(700px, min){
+                    border-top-left-radius: 0.5rem;
+                    border-bottom-left-radius: 0.5rem;
+                    border-top-right-radius: 0;
+                }
             }
 
             &:last-child:hover a {
-                border-top-right-radius: 0.5rem;
+
+                border-bottom-left-radius: 0.5rem;
                 border-bottom-right-radius: 0.5rem;
+
+                @include mqq(700px, min){
+                    border-top-right-radius: 0.5rem;
+                    border-bottom-right-radius: 0.5rem;
+                    border-bottom-left-radius: 0;
+                }
             }
         }
 
-        li:last-child {
-            margin-left: auto;
+        .call {
+            @include mqq(700px, min){
+                margin-left: auto;
+            }
         }
 
         a {
@@ -123,8 +165,38 @@
             color: white;
             padding: 1.2rem;
             transition: color 0.3s ease-out, background 0.3s ease-out;
+            text-align: center;
         }
 
     }
 }
-    
+
+#nav-main-toggle {
+    display: none;
+}
+
+#nav-toggle {
+    position: relative;
+    z-index: 1000;
+    margin-left: auto;
+    font-size: 130%;
+
+    &:hover, &:focus {
+        cursor: pointer;
+    }
+
+    &::before {
+        color: #2e4c66;
+        content: '\f0c9';
+    }
+}
+
+#nav-main-toggle:checked + .site-header {
+    .navigation {
+        display: block; 
+    }
+
+    #nav-toggle::before {
+        content: '\f00d';
+    }
+}
