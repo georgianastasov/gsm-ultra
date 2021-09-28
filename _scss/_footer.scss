@@ -5,32 +5,53 @@
     
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+        grid-template-columns: 1fr;
+
+        @include mqq(870px, min){
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
     }
 
     .intro {
         margin-left: 1rem;
         padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include mqq(870px, min){
+            text-align: start;
+            margin-bottom: 0;
+        }
 
         .branding {
             text-decoration: none;
             color: white;
             display: flex;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             margin-bottom: 0.8rem;
+
+            @include mqq(870px, min){
+                justify-content: flex-start;
+            }
+
             
             .logo {
                 flex-basis: 20%;
-    
+
                 img {
                     width: 100%;
                 }
             }
     
             .nxt {
-                flex-basis: 70%;
+                flex-basis: 100%;
+
+                @include mqq(870px, min){
+                    flex-basis: 70%;
+                }
     
                 .title {
                     text-transform: uppercase;
@@ -71,7 +92,13 @@
     .posts {
         margin-top: 1rem;
         padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
 
+        @include mqq(870px, min){
+            text-align: start;
+            margin-bottom: 0;
+        }
 
         .title {
             text-transform: uppercase;
@@ -106,6 +133,13 @@
         overflow: hidden;
         z-index: 1;
         padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include mqq(870px, min){
+            text-align: start;
+            margin-bottom: 0;
+        }
 
 
         &::before {
@@ -143,12 +177,27 @@
     .bottom {
         border-top: 1px solid white;
         padding: 1rem 0 0 0;
-        grid-column: span 3;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+
+
+        @include mqq(870px, min){
+            grid-column: span 3;
+            justify-content: space-between;
+            text-align: start;
+        }
 
         ul {
+            flex-basis: 100%;
             display: flex;
+            text-align: center;
+            margin-left: 1rem;
+
+            @include mqq(870px, min){
+                margin-left: 0;
+            }
         }
 
         li {

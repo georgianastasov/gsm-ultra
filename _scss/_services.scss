@@ -1,5 +1,5 @@
 .services {
-    height: 100vh;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,12 +9,22 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        grid-template-columns: 1fr;
+
+        @include mqq(1050px, min){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
     }
 
     .info{
-        padding: 5rem 2rem 2rem 2rem;
+        order: 2;
+        padding: 2rem 4rem 3rem 4rem;
+
+        @include mqq(1050px, min){
+            padding: 5rem 2rem 2rem 2rem;
+        }
+
         justify-self: end;
         
 
@@ -57,6 +67,7 @@
         }
 
         a {
+            display: inline-block;
             text-decoration: none;
             color: white;
             background-color: #15BFA5;
@@ -64,7 +75,11 @@
             font-size: 85%;
             font-weight: bold;
             transition: background 0.3s ease-out;
-            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+
+            @include mqq(340px, min){
+                margin-right: 0.5rem;
+            }
 
             &:hover {
                 background-color: #2e4c66;
@@ -73,6 +88,7 @@
     }
 
     .media {
+        order: 1;
         padding: 2rem;
         display: flex;
         justify-content: center;
@@ -80,8 +96,12 @@
         background-color: transparent;
         
         img{
-            width: 80%;
+            width: 60%;
             background-color: transparent;
+
+            @include mqq(1050px, min){
+                width: 90%;
+            }
         }
     }
 }
