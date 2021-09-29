@@ -25,6 +25,8 @@
         flex-wrap: wrap;
         margin-bottom: 1rem;
 
+        animation: navitemsin 0.3s 1 ease-out forwards;
+
         @include mqq(700px, min){
             flex-basis: 40%;
             text-align: start;
@@ -80,6 +82,7 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap;
+            animation: navitemsin 0.3s 1 ease-out forwards;
 
             .icon {
                 flex-basis: 15%;
@@ -109,6 +112,7 @@
     #nav-toggle {
         flex-basis: 10%;
         padding-left: 1rem;
+        animation: navitemsin 0.3s 1 ease-out forwards;
 
         @include mqq(700px, min){
             display: none;
@@ -143,6 +147,7 @@
 
         li {
             list-style: none outside;
+            animation: navitemszoom 0.3s 1 ease-out forwards;
 
             &:hover a{
                 color: #15BFA5;
