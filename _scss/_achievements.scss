@@ -29,11 +29,14 @@
         align-items: center;
         padding: 1rem;
 
-        
+        &:hover i {
+            transform: rotate(360deg);
+        }
 
         i {
             font-size: 230%;
             margin-bottom: 1rem;
+            transition: transform 0.3s ease-out;
         }
 
         .title{ 

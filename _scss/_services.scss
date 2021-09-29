@@ -98,9 +98,14 @@
         img{
             width: 60%;
             background-color: transparent;
+            transition: transform 0.3s ease-in;
 
             @include mqq(1050px, min){
                 width: 90%;
+            }
+
+            &:hover {
+                transform:  scale(1.1);
             }
         }
     }

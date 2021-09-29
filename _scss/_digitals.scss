@@ -57,11 +57,16 @@
         justify-content: center;
         align-items: center;
 
+        &:hover i {
+            transform: rotate(360deg);
+        }
+
         i {
             font-size: 230%;
             color: #2e4c66;
             margin-bottom: 1rem;
             background-color: white;
+            transition: transform 0.3s ease-out;
         }
 
         .title {

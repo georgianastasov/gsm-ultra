@@ -1,0 +1,71 @@
+.gallery {
+    padding: 4rem 2rem;
+
+    .galleryul {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        grid-auto-flow: dense;
+
+        @include mqq(500px, min){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.7rem;
+        }
+
+        @include mqq(930px, min){
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        li {
+          position: relative;
+          overflow: hidden;
+          list-style: none outside;
+          
+          &:before {
+            display: block;
+            content: '';
+            padding-top: 100%;
+          }
+        }
+
+        .ten {
+            display: block;
+            
+            @include mqq(930px, min){
+                display: none;
+            }
+        }
+
+        a {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          transition: transform 0.3s ease-out;
+
+          &:hover {
+            transform: translate(-50%,-50%) scale(1.2);
+          }
+        }
+        
+        li.landscape img {
+          width: auto;
+          height: 100%;
+        }
+
+    }
+}
