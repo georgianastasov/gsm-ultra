@@ -1,0 +1,73 @@
+.services-achievements {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    @include mqq(630px, min){
+        padding: 5rem;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        color: black;
+
+        @include mqq(630px, min){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mqq(930px, min){
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        i {
+            font-size: 230%;
+            margin-bottom: 1rem;
+            color: #2e4c66;
+        }
+
+        .title{ 
+            flex-basis: 100%;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #2e4c66;
+        }
+
+        span {
+            color: #15BFA5;
+        }
+        
+        .desc {
+            text-align: center;
+            font-size: 80%;
+            color: gray;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            transition: color 0.3s ease-out;
+            font-size: 80%;
+            font-weight: bold;
+
+            &:hover {
+                color: #15BFA5;
+            }
+        }
+    }
+}

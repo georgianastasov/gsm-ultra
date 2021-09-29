@@ -14,7 +14,7 @@ html {
 }
 
 html {
-  font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 @media screen and (max-width: 499px) {
@@ -1011,7 +1011,7 @@ body .wrapper {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 7rem;
+  padding: 6.5rem;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1020,7 +1020,7 @@ body .wrapper {
 .about-banner::before {
   display: block;
   content: "";
-  background: rgba(40, 40, 40, 0.85);
+  background: rgba(33, 33, 33, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -1085,7 +1085,6 @@ body .wrapper {
 }
 .about-repairs .wrapper .left .front .media {
   display: block;
-  background: red;
   position: absolute;
   top: 0;
   left: 0;
@@ -1199,4 +1198,195 @@ body .wrapper {
   .about-tokens .box .desc {
     flex-basis: 60%;
   }
+}
+
+.services-banner {
+  background-image: url(https://lh3.googleusercontent.com/M8q95FYqLp8f5XfMcDn2XvmrEDIqYzqNKngyDXdJ6dt7Lmlg3K7AQ9lPLPccRvE41W-D5Zm0=w1080-h608-p-no-v0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 6.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services-banner::before {
+  display: block;
+  content: "";
+  background: rgba(33, 33, 33, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.services-banner .wrapper {
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+.services-banner .wrapper i {
+  font-size: 80%;
+}
+.services-banner .wrapper .title {
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.services-repairs {
+  padding: 5rem 2rem;
+}
+.services-repairs .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 630px) {
+  .services-repairs .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 930px) {
+  .services-repairs .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.services-repairs .wrapper .intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 630px) {
+  .services-repairs .wrapper .intro {
+    grid-column: span 2;
+  }
+}
+@media screen and (min-width: 930px) {
+  .services-repairs .wrapper .intro {
+    grid-column: span 3;
+  }
+}
+.services-repairs .wrapper .intro .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 150%;
+  margin-bottom: 0.5rem;
+}
+.services-repairs .wrapper .intro span {
+  display: inline-block;
+  width: 3rem;
+  height: 0.2rem;
+  border-radius: 0.6rem;
+  background-color: #15BFA5;
+  margin-bottom: 1rem;
+}
+.services-repairs .wrapper .intro .desc {
+  font-size: 80%;
+  color: gray;
+}
+.services-repairs .wrapper .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.services-repairs .wrapper .box span {
+  flex-basis: 30%;
+  display: inline-block;
+  background-color: #2e4c66;
+  padding: 0.5rem 1.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 7px 2px #000000;
+  transition: background 0.3s ease-out;
+}
+.services-repairs .wrapper .box span:hover {
+  background-color: #15BFA5;
+}
+.services-repairs .wrapper .box span i {
+  color: white;
+  font-size: 250%;
+}
+.services-repairs .wrapper .box .title {
+  flex-basis: 65%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2e4c66;
+}
+.services-repairs .wrapper .box .desc {
+  flex-basis: 100%;
+  font-size: 80%;
+  color: gray;
+}
+
+.services-achievements {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+@media screen and (min-width: 630px) {
+  .services-achievements {
+    padding: 5rem;
+  }
+}
+.services-achievements .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: black;
+}
+@media screen and (min-width: 630px) {
+  .services-achievements .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 930px) {
+  .services-achievements .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.services-achievements .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.services-achievements .box i {
+  font-size: 230%;
+  margin-bottom: 1rem;
+  color: #2e4c66;
+}
+.services-achievements .box .title {
+  flex-basis: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2e4c66;
+}
+.services-achievements .box span {
+  color: #15BFA5;
+}
+.services-achievements .box .desc {
+  text-align: center;
+  font-size: 80%;
+  color: gray;
+  margin-bottom: 1rem;
+}
+.services-achievements .box a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: color 0.3s ease-out;
+  font-size: 80%;
+  font-weight: bold;
+}
+.services-achievements .box a:hover {
+  color: #15BFA5;
 }

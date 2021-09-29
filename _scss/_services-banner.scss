@@ -1,5 +1,5 @@
-.about-banner {
-    background-image: url(https://video-images.vice.com/videos/5a/01/5a01b91b177dd416f530a081/5a01b91b177dd416f530a081-1518708133630.jpg);
+.services-banner {
+    background-image: url(https://lh3.googleusercontent.com/M8q95FYqLp8f5XfMcDn2XvmrEDIqYzqNKngyDXdJ6dt7Lmlg3K7AQ9lPLPccRvE41W-D5Zm0=w1080-h608-p-no-v0);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     &::before {
         display: block;
         content: '';
-        background: rgba(33, 33, 33, 0.8);
+        background: rgba(33, 33, 33, 0.85);
         position: absolute;
         top: 0;
         left: 0;
