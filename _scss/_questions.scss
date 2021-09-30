@@ -1,0 +1,68 @@
+.questions {
+    padding: 5rem 2rem;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .QandA {
+        flex: 0 0 100%;
+
+        @include mqq(830px, min){
+            flex: 0 0 70%;
+        }
+
+        .question {
+            font-weight: bold;
+            font-size: 110%;
+            margin-bottom: 0.6rem;
+        }
+
+        .answer {
+            font-size: 90%;
+            color: gray;
+            border-bottom: 2px dotted gray;
+            margin-bottom: 1rem;
+            padding-bottom: 0.6rem;
+        }
+    }
+
+    .aside {
+        flex: 0 0 100%;
+        margin-top: 2rem;
+
+        @include mqq(830px, min){
+            flex: 0 0 25%;
+            align-self: flex-start;
+            margin-top: 0;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 110%;
+            margin-bottom: 0.6rem;
+        }
+
+        li {
+            list-style: none outside;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2e4c66;
+            transition: color 0.3s ease-out;
+
+            &:hover {
+                color: #15BFA5;
+            }
+        }
+
+        i {
+            margin-right: 0.5rem;
+        }
+    }
+
+}
