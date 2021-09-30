@@ -16,12 +16,20 @@
         <div class="posts">
             <p class="title">Скорошни постове</p>
             <div class="post postone">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing ntium ab perferendis itaque voluptatibus inventore..</p>
-                <p class="date">От админа 27 Септември</p>
+                {% if page.title == "Home" %}
+                <a class="text" href="blog/index.html">Lorem ipsum dolor sit amet consectetur adipisicing ntium ab perferendis itaque voluptatibus inventore..</a>
+                {% else %}
+                <a class="text" href="../blog/index.html">Lorem ipsum dolor sit amet consectetur adipisicing ntium ab perferendis itaque voluptatibus inventore..</a>
+                {% endif %}
+                <p class="date">27 Септември</p>
             </div>
             <div class="post">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing ntium ab perferendis itaque voluptatibus inventore..</p>
-                <p class="date">От админа 28 Септември</p>
+                {% if page.title == "Home" %}
+                <a class="text" href="blog/index.html">Lorem ipsum dolor sit amet consectetur adipisicing ntium ab perferendis itaque voluptatibus inventore..</a>
+                {% else %}
+                <a class="text" href="../blog/index.html">Lorem ipsum dolor sit amet consectetur adipisicing ntium ab perferendis itaque voluptatibus inventore..</a>
+                {% endif %}
+                <p class="date">29 Септември</p>
             </div>
         </div>
         <div class="links">

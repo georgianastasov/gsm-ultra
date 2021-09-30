@@ -482,6 +482,10 @@ body .wrapper {
   text-transform: uppercase;
   font-weight: bold;
   color: #426b8f;
+  transition: color 0.3s ease-out;
+}
+.site-footer .intro .branding .nxt:hover .title {
+  color: #15BFA5;
 }
 .site-footer .intro .branding .nxt .subtitle {
   text-transform: uppercase;
@@ -525,16 +529,21 @@ body .wrapper {
 }
 .site-footer .posts .postone {
   border-bottom: 1px solid gray;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
 }
 .site-footer .posts .text {
   color: #d4d4d4;
   font-size: 80%;
   margin-bottom: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+.site-footer .posts .text:hover {
+  color: #15BFA5;
 }
 .site-footer .posts .date {
   font-size: 80%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 .site-footer .links {
   margin-top: 1rem;
@@ -1025,6 +1034,9 @@ body .wrapper {
   color: #9e9e9e;
   font-size: 80%;
   margin-bottom: 1rem;
+}
+.blog .box .date i {
+  margin-right: 0.5rem;
 }
 .blog .box .desc {
   color: gray;
@@ -1736,17 +1748,34 @@ body .wrapper {
   flex: 0 0 100%;
   margin-top: 2rem;
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 430px) {
   .questions .aside {
+    display: flex;
+  }
+}
+@media screen and (min-width: 900px) {
+  .questions .aside {
+    display: block;
     flex: 0 0 25%;
     align-self: flex-start;
     margin-top: 0;
+  }
+}
+.questions .aside .categories {
+  margin-right: 4rem;
+}
+@media screen and (min-width: 900px) {
+  .questions .aside .categories {
+    margin-right: 0;
   }
 }
 .questions .aside .title {
   font-weight: bold;
   font-size: 110%;
   margin-bottom: 0.6rem;
+}
+.questions .aside ul {
+  margin-bottom: 1.5rem;
 }
 .questions .aside li {
   list-style: none outside;
@@ -1761,4 +1790,142 @@ body .wrapper {
 }
 .questions .aside i {
   margin-right: 0.5rem;
+}
+.questions .aside .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.questions .aside .box .media {
+  flex-basis: 30%;
+}
+.questions .aside .box .media img {
+  transition: transform 0.3s ease-out;
+}
+.questions .aside .box .media:hover img {
+  transform: scale(1.1);
+}
+.questions .aside .box .info {
+  flex-basis: 50%;
+}
+.questions .aside .box .info .subtitle {
+  font-weight: bold;
+  font-size: 95%;
+}
+.questions .aside .box .info .date {
+  font-size: 80%;
+  color: gray;
+}
+.questions .aside .box .info i {
+  margin-right: 0.5rem;
+}
+
+.blog-banner {
+  background-image: url(https://picjumbo.com/wp-content/uploads/crashed-iphone-6-with-cracked-screen-display-1570x1047.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 6.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-banner::before {
+  display: block;
+  content: "";
+  background: rgba(33, 33, 33, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.blog-banner .wrapper {
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+.blog-banner .wrapper i {
+  font-size: 80%;
+}
+.blog-banner .wrapper .title {
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.blog-content {
+  padding: 5rem 2rem;
+}
+.blog-content .blog-post {
+  margin-bottom: 2rem;
+}
+.blog-content .blog-post:first-child {
+  margin-bottom: 6rem;
+}
+.blog-content .blog-post .media {
+  background-color: transparent;
+  margin-bottom: 0.5rem;
+}
+.blog-content .blog-post .media img.first {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.blog-content .blog-post .media img.second {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media screen and (min-width: 730px) {
+  .blog-content .blog-post .media img.second {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 950px) {
+  .blog-content .blog-post .media img.second {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .blog-content .blog-post .media img.second {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .blog-content .blog-post .media img.second {
+    max-width: 50%;
+  }
+}
+.blog-content .blog-post .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 120%;
+  margin-bottom: 0.2rem;
+}
+.blog-content .blog-post .date {
+  color: #9e9e9e;
+  font-size: 80%;
+  margin-bottom: 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid gray;
+}
+.blog-content .blog-post i {
+  margin-right: 0.5rem;
+}
+.blog-content .blog-post .desc {
+  font-size: 80%;
+  margin-bottom: 0.6rem;
+}
+.blog-content .blog-post .instructions {
+  margin-left: 1rem;
+  font-size: 80%;
+}
+.blog-content .blog-post .last {
+  margin-bottom: 0.6rem;
 }
