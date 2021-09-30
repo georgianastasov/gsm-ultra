@@ -40,6 +40,7 @@
         <label id="nav-toggle" for="nav-main-toggle" class="fas" for=""><span></span></label>
         <nav class="navigation">
             <ul>
+                {% if page.title == "Home" %}
                 <li><a href="index.html">Начало</a></li>
                 <li><a href="about/index.html">Относно</a></li>
                 <li><a href="services/index.html">Услуги</a></li>
@@ -47,6 +48,15 @@
                 <li><a href="contacts/index.html">Контакти</a></li>
                 <li><a href="questions/index.html">Въпроси</a></li>
                 <li class="call"><a href="contacts/index.html"><i class="fas fa-phone"></i></a></li>
+                {% else %}
+                <li><a href="../index.html">Начало</a></li>
+                <li><a href="../about/index.html">Относно</a></li>
+                <li><a href="../services/index.html">Услуги</a></li>
+                <li><a href="../gallery/index.html">Галерия</a></li>
+                <li><a href="../contacts/index.html">Контакти</a></li>
+                <li><a href="../questions/index.html">Въпроси</a></li>
+                <li class="call"><a href="../contacts/index.html"><i class="fas fa-phone"></i></a></li>
+                {% endif %}
             </ul>
         </nav>
     </div>
