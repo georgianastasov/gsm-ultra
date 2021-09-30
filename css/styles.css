@@ -1405,10 +1405,14 @@ body .wrapper {
   align-items: center;
   padding: 1rem;
 }
+.services-achievements .box:hover i {
+  transform: rotate(360deg);
+}
 .services-achievements .box i {
   font-size: 230%;
   margin-bottom: 1rem;
   color: #2e4c66;
+  transition: transform 0.3s ease-out;
 }
 .services-achievements .box .title {
   flex-basis: 100%;
