@@ -315,6 +315,8 @@ body .wrapper {
 }
 .site-header .site-links .box .desc {
   font-size: 70%;
+  text-decoration: none;
+  color: black;
 }
 .site-header #nav-toggle {
   flex-basis: 10%;
@@ -579,6 +581,8 @@ body .wrapper {
   font-size: 80%;
   margin-bottom: 1rem;
   z-index: 100;
+  text-decoration: none;
+  color: white;
 }
 .site-footer .bottom {
   border-top: 1px solid white;
